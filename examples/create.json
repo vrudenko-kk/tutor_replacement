@@ -1,0 +1,37 @@
+{
+  "method": "create",
+  "arguments": {
+    "request": {
+      "id": "R1",
+      "initiator": "initiator",
+      "department": "informatics",
+      "day": "2026-10-06",
+      "lesson_ids": [
+        "L1",
+        "L2"
+      ],
+      "psz": {
+        "L1": "disciplinary",
+        "L2": "disciplinary"
+      },
+      "deadline": "2026-10-06T10:00:00+03:00",
+      "timeout_minutes": 15,
+      "mode": "sequential",
+      "comments": {
+        "L1": "Функции и коллекции",
+        "L2": "SQL JOIN"
+      },
+      "materials": {
+        "L1": "materials/python-lesson.pdf",
+        "L2": "materials/sql-lesson.pdf"
+      },
+      "episode_id": "absence-2026-10-06"
+    },
+    "actor": {
+      "id": "secretary-1",
+      "role": "secretary",
+      "department": "informatics"
+    },
+    "now": "2026-10-05T15:00:00+03:00"
+  }
+}

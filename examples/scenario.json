@@ -1,0 +1,278 @@
+{
+  "data": {
+    "timezone": "Europe/Moscow",
+    "campuses": [
+      "A",
+      "B"
+    ],
+    "slots": {
+      "1": {
+        "start": "08:30",
+        "end": "10:00"
+      },
+      "2": {
+        "start": "10:10",
+        "end": "11:40"
+      },
+      "3": {
+        "start": "12:10",
+        "end": "13:40"
+      },
+      "4": {
+        "start": "13:50",
+        "end": "15:20"
+      },
+      "5": {
+        "start": "15:30",
+        "end": "17:00"
+      },
+      "6": {
+        "start": "17:10",
+        "end": "18:40"
+      }
+    },
+    "teachers": {
+      "initiator": {
+        "name": "Иванов Иван",
+        "positions": [
+          {
+            "department": "informatics",
+            "start": "2020-01-01",
+            "end": null,
+            "title": "Преподаватель",
+            "employment": "main",
+            "fte": 1
+          }
+        ],
+        "daily_cap": 2,
+        "competences": {
+          "python": {
+            "level": "priority",
+            "priority": 0.5
+          },
+          "db": {
+            "level": "ready",
+            "priority": 0.5
+          }
+        },
+        "campus_weights": {
+          "A": 1,
+          "B": 0.7
+        },
+        "traffic": {
+          "2026-10-06/1": "green",
+          "2026-10-06/2": "green",
+          "2026-10-06/3": "green",
+          "2026-10-06/4": "green",
+          "2026-10-06/5": "green",
+          "2026-10-06/6": "green"
+        }
+      },
+      "anna": {
+        "name": "Анна Смирнова",
+        "positions": [
+          {
+            "department": "informatics",
+            "start": "2020-01-01",
+            "end": null,
+            "title": "Преподаватель",
+            "employment": "main",
+            "fte": 1
+          }
+        ],
+        "daily_cap": 2,
+        "competences": {
+          "python": {
+            "level": "priority",
+            "priority": 0.5
+          },
+          "db": {
+            "level": "ready",
+            "priority": 0.5
+          }
+        },
+        "campus_weights": {
+          "A": 1,
+          "B": 0.7
+        },
+        "traffic": {
+          "2026-10-06/1": "green",
+          "2026-10-06/2": "green",
+          "2026-10-06/3": "green",
+          "2026-10-06/4": "green",
+          "2026-10-06/5": "green",
+          "2026-10-06/6": "green"
+        }
+      },
+      "boris": {
+        "name": "Борис Петров",
+        "positions": [
+          {
+            "department": "informatics",
+            "start": "2020-01-01",
+            "end": null,
+            "title": "Преподаватель",
+            "employment": "main",
+            "fte": 1
+          }
+        ],
+        "daily_cap": 1,
+        "competences": {
+          "python": {
+            "level": "ready",
+            "priority": 0.5
+          }
+        },
+        "campus_weights": {
+          "A": 1,
+          "B": 0.7
+        },
+        "traffic": {
+          "2026-10-06/1": "green",
+          "2026-10-06/2": "green",
+          "2026-10-06/3": "green",
+          "2026-10-06/4": "green",
+          "2026-10-06/5": "green",
+          "2026-10-06/6": "green"
+        }
+      },
+      "vera": {
+        "name": "Вера Соколова",
+        "positions": [
+          {
+            "department": "informatics",
+            "start": "2020-01-01",
+            "end": null,
+            "title": "Преподаватель",
+            "employment": "main",
+            "fte": 1
+          }
+        ],
+        "daily_cap": 1,
+        "competences": {
+          "db": {
+            "level": "priority",
+            "priority": 0.5
+          }
+        },
+        "campus_weights": {
+          "A": 1,
+          "B": 0.7
+        },
+        "traffic": {
+          "2026-10-06/1": "green",
+          "2026-10-06/2": "green",
+          "2026-10-06/3": "green",
+          "2026-10-06/4": "green",
+          "2026-10-06/5": "green",
+          "2026-10-06/6": "green"
+        }
+      }
+    },
+    "disciplines": {
+      "python": {
+        "name": "Программирование на Python",
+        "related_groups": [
+          "programming"
+        ]
+      },
+      "db": {
+        "name": "Базы данных",
+        "related_groups": [
+          "databases"
+        ]
+      },
+      "java": {
+        "name": "Программирование на Java",
+        "related_groups": [
+          "programming"
+        ]
+      }
+    },
+    "lessons": {
+      "L1": {
+        "teacher": "initiator",
+        "discipline": "python",
+        "day": "2026-10-06",
+        "slot": 2,
+        "campus": "A",
+        "group": "ИС-101",
+        "kind": "practice",
+        "online_allowed": true
+      },
+      "L2": {
+        "teacher": "initiator",
+        "discipline": "db",
+        "day": "2026-10-06",
+        "slot": 3,
+        "campus": "A",
+        "group": "ИС-101",
+        "kind": "practice",
+        "online_allowed": true
+      },
+      "A1": {
+        "teacher": "anna",
+        "discipline": "python",
+        "day": "2026-10-06",
+        "slot": 1,
+        "campus": "A",
+        "group": "ИС-101",
+        "kind": "practice",
+        "online_allowed": true
+      },
+      "A4": {
+        "teacher": "anna",
+        "discipline": "db",
+        "day": "2026-10-06",
+        "slot": 4,
+        "campus": "A",
+        "group": "ИС-101",
+        "kind": "practice",
+        "online_allowed": true
+      }
+    },
+    "travel": {
+      "A": {
+        "B": 45
+      },
+      "B": {
+        "A": 50
+      }
+    },
+    "history": [],
+    "groups": {
+      "ИС-101": {
+        "name": "ИС-101",
+        "size": 25,
+        "study_mode": "full_time"
+      }
+    },
+    "rooms": {}
+  },
+  "request": {
+    "id": "R1",
+    "initiator": "initiator",
+    "department": "informatics",
+    "day": "2026-10-06",
+    "lesson_ids": [
+      "L1",
+      "L2"
+    ],
+    "psz": {
+      "L1": "disciplinary",
+      "L2": "disciplinary"
+    },
+    "deadline": "2026-10-06T10:00:00+03:00",
+    "timeout_minutes": 15,
+    "mode": "sequential",
+    "comments": {
+      "L1": "Функции и коллекции",
+      "L2": "SQL JOIN"
+    },
+    "materials": {
+      "L1": "materials/python-lesson.pdf",
+      "L2": "materials/sql-lesson.pdf"
+    },
+    "episode_id": "absence-2026-10-06"
+  }
+}

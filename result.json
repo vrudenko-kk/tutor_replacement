@@ -1,0 +1,256 @@
+{
+  "stage": "BASE",
+  "complete": true,
+  "assignments": {
+    "L1": {
+      "teacher": "anna",
+      "lesson": "L1",
+      "cost": 9091,
+      "features": {
+        "psz_mismatch": 0,
+        "comp_level": 0,
+        "traffic_light": 0,
+        "window_priority": 0,
+        "campus_priority": 0,
+        "travel_penalty": 0.0,
+        "consecutive_priority": 1,
+        "history_score": 0.6,
+        "preference": 0.5
+      },
+      "window": "inner_gap",
+      "campus": "A",
+      "online": false
+    },
+    "L2": {
+      "teacher": "anna",
+      "lesson": "L2",
+      "cost": 49495,
+      "features": {
+        "psz_mismatch": 0,
+        "comp_level": 0.3333333333333333,
+        "traffic_light": 0,
+        "window_priority": 0,
+        "campus_priority": 0,
+        "travel_penalty": 0.0,
+        "consecutive_priority": 1,
+        "history_score": 0.6,
+        "preference": 0.5
+      },
+      "window": "inner_gap",
+      "campus": "A",
+      "online": false
+    }
+  },
+  "cost": 58586,
+  "ranked": {
+    "L1": [
+      {
+        "teacher": "anna",
+        "lesson": "L1",
+        "cost": 9091,
+        "features": {
+          "psz_mismatch": 0,
+          "comp_level": 0,
+          "traffic_light": 0,
+          "window_priority": 0,
+          "campus_priority": 0,
+          "travel_penalty": 0.0,
+          "consecutive_priority": 1,
+          "history_score": 0.6,
+          "preference": 0.5
+        },
+        "window": "inner_gap",
+        "campus": "A",
+        "online": false,
+        "global_coverage": 2,
+        "global_cost": 58586,
+        "allows_full_coverage": true
+      },
+      {
+        "teacher": "boris",
+        "lesson": "L1",
+        "cost": 110101,
+        "features": {
+          "psz_mismatch": 0,
+          "comp_level": 0.3333333333333333,
+          "traffic_light": 0,
+          "window_priority": 0.5,
+          "campus_priority": 0,
+          "travel_penalty": 0.0,
+          "consecutive_priority": 1,
+          "history_score": 0.6,
+          "preference": 0.5
+        },
+        "window": "full_day",
+        "campus": "A",
+        "online": false,
+        "global_coverage": 2,
+        "global_cost": 159596,
+        "allows_full_coverage": true
+      }
+    ],
+    "L2": [
+      {
+        "teacher": "anna",
+        "lesson": "L2",
+        "cost": 49495,
+        "features": {
+          "psz_mismatch": 0,
+          "comp_level": 0.3333333333333333,
+          "traffic_light": 0,
+          "window_priority": 0,
+          "campus_priority": 0,
+          "travel_penalty": 0.0,
+          "consecutive_priority": 1,
+          "history_score": 0.6,
+          "preference": 0.5
+        },
+        "window": "inner_gap",
+        "campus": "A",
+        "online": false,
+        "global_coverage": 2,
+        "global_cost": 58586,
+        "allows_full_coverage": true
+      },
+      {
+        "teacher": "vera",
+        "lesson": "L2",
+        "cost": 69697,
+        "features": {
+          "psz_mismatch": 0,
+          "comp_level": 0,
+          "traffic_light": 0,
+          "window_priority": 0.5,
+          "campus_priority": 0,
+          "travel_penalty": 0.0,
+          "consecutive_priority": 1,
+          "history_score": 0.6,
+          "preference": 0.5
+        },
+        "window": "full_day",
+        "campus": "A",
+        "online": false,
+        "global_coverage": 2,
+        "global_cost": 78788,
+        "allows_full_coverage": true
+      }
+    ]
+  },
+  "audit": [
+    {
+      "stage": "BASE",
+      "covered": 2,
+      "required": 2,
+      "cost": 58586,
+      "rejected": {
+        "L1": {
+          "initiator": [
+            "initiator",
+            "time_conflict"
+          ],
+          "vera": [
+            "disciplinary_competence"
+          ]
+        },
+        "L2": {
+          "boris": [
+            "disciplinary_competence"
+          ],
+          "initiator": [
+            "initiator",
+            "time_conflict"
+          ]
+        }
+      },
+      "candidates": [
+        {
+          "teacher": "anna",
+          "lesson": "L1",
+          "cost": 9091,
+          "features": {
+            "psz_mismatch": 0,
+            "comp_level": 0,
+            "traffic_light": 0,
+            "window_priority": 0,
+            "campus_priority": 0,
+            "travel_penalty": 0.0,
+            "consecutive_priority": 1,
+            "history_score": 0.6,
+            "preference": 0.5
+          },
+          "window": "inner_gap",
+          "campus": "A",
+          "online": false
+        },
+        {
+          "teacher": "boris",
+          "lesson": "L1",
+          "cost": 110101,
+          "features": {
+            "psz_mismatch": 0,
+            "comp_level": 0.3333333333333333,
+            "traffic_light": 0,
+            "window_priority": 0.5,
+            "campus_priority": 0,
+            "travel_penalty": 0.0,
+            "consecutive_priority": 1,
+            "history_score": 0.6,
+            "preference": 0.5
+          },
+          "window": "full_day",
+          "campus": "A",
+          "online": false
+        },
+        {
+          "teacher": "anna",
+          "lesson": "L2",
+          "cost": 49495,
+          "features": {
+            "psz_mismatch": 0,
+            "comp_level": 0.3333333333333333,
+            "traffic_light": 0,
+            "window_priority": 0,
+            "campus_priority": 0,
+            "travel_penalty": 0.0,
+            "consecutive_priority": 1,
+            "history_score": 0.6,
+            "preference": 0.5
+          },
+          "window": "inner_gap",
+          "campus": "A",
+          "online": false
+        },
+        {
+          "teacher": "vera",
+          "lesson": "L2",
+          "cost": 69697,
+          "features": {
+            "psz_mismatch": 0,
+            "comp_level": 0,
+            "traffic_light": 0,
+            "window_priority": 0.5,
+            "campus_priority": 0,
+            "travel_penalty": 0.0,
+            "consecutive_priority": 1,
+            "history_score": 0.6,
+            "preference": 0.5
+          },
+          "window": "full_day",
+          "campus": "A",
+          "online": false
+        }
+      ],
+      "weights": {
+        "psz_mismatch": 1,
+        "comp_level": 2,
+        "traffic_light": 1,
+        "window_priority": 2,
+        "campus_priority": 6,
+        "travel_penalty": 2,
+        "consecutive_priority": 1,
+        "history_score": 1,
+        "preference": 0.5
+      }
+    }
+  ]
+}

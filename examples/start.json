@@ -1,0 +1,12 @@
+{
+  "method": "start",
+  "arguments": {
+    "rid": "R1",
+    "actor": {
+      "id": "secretary-1",
+      "role": "secretary",
+      "department": "informatics"
+    },
+    "now": "2026-10-05T15:00:00+03:00"
+  }
+}

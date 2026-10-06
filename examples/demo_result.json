@@ -1,0 +1,23 @@
+{
+  "status": "confirmed",
+  "assignments": {
+    "L1": {
+      "request": "R1",
+      "lesson": "L1",
+      "teacher": "anna",
+      "campus": "A",
+      "online": false,
+      "accepted_at": "2026-10-06T08:00:00+03:00"
+    },
+    "L2": {
+      "request": "R1",
+      "lesson": "L2",
+      "teacher": "anna",
+      "campus": "A",
+      "online": false,
+      "accepted_at": "2026-10-06T08:00:00+03:00"
+    }
+  },
+  "audit_events": 10,
+  "queued_notifications": 6
+}
