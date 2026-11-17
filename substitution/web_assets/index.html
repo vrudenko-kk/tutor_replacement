@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#233e76">
+  <title>Замена преподавателя · Учебный прототип</title>
+  <link rel="stylesheet" href="/brand.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К основному содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-content">
+      <a class="brand" href="#main" aria-label="Финансовый университет, к началу страницы">
+        <img src="/logo-light.png" alt="Финансовый университет при Правительстве Российской Федерации" width="224" height="75">
+      </a>
+      <nav aria-label="Разделы страницы">
+        <a href="#workspace" aria-current="location">Подбор</a>
+        <a href="#details">Кандидаты и аудит</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Учебный прототип</p>
+      <h1>Замена преподавателя</h1>
+      <p>Подбор замещающих с учётом расписания, компетенций и времени переезда между площадками.</p>
+    </div>
+
+    <div id="workspace" class="grid">
+      <section class="source panel" aria-labelledby="source-title">
+        <h2 id="source-title">Заявка</h2>
+        <dl id="request-meta" class="metadata">
+          <div><dt>Сценарий</dt><dd>Загрузка учебного примера…</dd></div>
+        </dl>
+        <button id="calculate" class="primary" type="button" disabled>
+          Рассчитать подбор <span class="arrow" aria-hidden="true">→</span>
+        </button>
+        <div class="source-actions">
+          <label class="upload-button">
+            <input id="upload" type="file" accept="application/json,.json">
+            <span>Загрузить JSON</span>
+          </label>
+          <button id="example" class="text-button" type="button" hidden>Вернуть пример</button>
+        </div>
+        <p id="source-error" class="error" role="alert" hidden></p>
+      </section>
+
+      <section class="result panel" aria-labelledby="result-title">
+        <div class="section-head">
+          <h2 id="result-title">Результат подбора</h2>
+          <span id="stage" class="stage" hidden></span>
+        </div>
+        <p id="summary" class="summary" role="status" aria-live="polite">Загрузка сценария…</p>
+        <ul id="assignments" class="assignment-list"></ul>
+        <div class="result-actions">
+          <button id="download" type="button" class="secondary" disabled>Скачать расчёт <span aria-hidden="true">↓</span></button>
+        </div>
+      </section>
+    </div>
+
+    <section id="details" class="details" aria-labelledby="details-title">
+      <h2 id="details-title">Кандидаты и аудит</h2>
+      <div class="tabs" role="tablist" aria-label="Детали расчёта">
+        <button id="rank-tab" type="button" role="tab" aria-controls="rank-panel" aria-selected="true">Кандидаты</button>
+        <button id="audit-tab" type="button" role="tab" aria-controls="audit-panel" aria-selected="false" tabindex="-1">Аудит</button>
+      </div>
+      <div id="rank-panel" class="detail-panel" role="tabpanel" aria-labelledby="rank-tab" tabindex="0">
+        <p class="muted">Выполните расчёт, чтобы увидеть рейтинг кандидатов.</p>
+      </div>
+      <div id="audit-panel" class="detail-panel" role="tabpanel" aria-labelledby="audit-tab" tabindex="0" hidden>
+        <p class="muted">Выполните расчёт, чтобы увидеть причины отсева.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-content">
+      <img src="/logo-dark.png" alt="Финансовый университет" width="196" height="66">
+      <div>
+        <p>Замена преподавателя</p>
+        <small>Локальная демонстрация алгоритма подбора</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

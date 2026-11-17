@@ -32,9 +32,16 @@ def main():
         command.add_argument("--database", required=True)
     demo = commands.add_parser("demo", help="Демонстрация до статуса confirmed")
     demo.add_argument("--database", default=":memory:")
+    web = commands.add_parser("web", help="Открыть локальный экран подбора")
+    web.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
     service = None
     try:
+        if args.command == "web":
+            from .web import serve
+
+            serve(args.port)
+            return 0
         if args.command == "plan":
             raw = read(args.input)
             result = Planner(Dataset.from_dict(raw["data"]), Policy(**raw.get("policy", {}))).plan(Request(**raw["request"]))
